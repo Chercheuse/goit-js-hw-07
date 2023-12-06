@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  height: 100%;
+}
+
 body {
   margin: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
@@ -11,4 +18,18 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+}
+
+.gallery {
+  display: flex;
+  gap: 48px 24px;
+  flex-wrap: wrap;
+  padding: 100px 156px;
+}
+
+.gallery > li {
+  width: 360px;
+  height: 300px;
+  list-style-type: none;
+  flex-shrink: 0;
 }
