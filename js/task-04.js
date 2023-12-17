@@ -1,5 +1,5 @@
 const form = document.querySelector(".login-form");
-const registerForm = form.addEventListener('submit', formValid)
+const registerForm = form.addEventListener("submit", formValid);
 
 function formValid(event) {
   event.preventDefault();
@@ -12,6 +12,6 @@ function formValid(event) {
     alert("All form fields must be filled in");
   }
 
-  console.log({email : login.value.trim(), password: password.value.trim()});
+  console.log({ email: login.value.trim(), password: password.value.trim() });
   form.reset();
 }
