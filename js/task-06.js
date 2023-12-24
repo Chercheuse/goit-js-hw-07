@@ -9,10 +9,12 @@ const boxes = document.getElementById("boxes");
 const createBtn = document.querySelector("button[data-create]");
 const destroyBtn = document.querySelector("button[data-destroy]");
 
-function createBoxes(amount) {
-  amount = input.value;
+function createBoxes() {
+  amount = Math.abs(input.value);
 
   if (amount <= 100 && amount > 0) {
+    destroyBoxes();
+
     for (let i = 0; i < amount; i++) {
       const newElement = document.createElement("div");
       newElement.style.width = `${30 + i * 10}px`;
