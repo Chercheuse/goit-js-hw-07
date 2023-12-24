@@ -32,6 +32,7 @@ images
     const listItem = document.createElement("li");
 
     const imgElement = document.createElement("img");
+    imgElement.className = 'img-item';
     imgElement.setAttribute("src", image.url);
     imgElement.setAttribute("alt", image.alt);
     return listItem.appendChild(imgElement);

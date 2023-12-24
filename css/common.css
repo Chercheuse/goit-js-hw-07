@@ -9,6 +9,11 @@ img {
   height: 100%;
 }
 
+.img-item {
+  width: 360px;
+  height: 300px;
+}
+
 body {
   margin: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
